@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/04_ObjectPools/_Scene/04_ObjectPools.unity
   - enabled: 1
     path: Assets/05_CurvesAndSplines/_Scene/05_CurvesAndSplines.unity
+  - enabled: 1
+    path: Assets/06_ProceduralGrid/_Scene/06_ProceduralGrid.unity
