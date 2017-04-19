@@ -15,6 +15,12 @@ namespace _05_CurvesAndSplines
 		private const float _directionScale = 0.5f;
 		private const float _handleSize = 0.04f;
 		private const float _pickSize = 0.06f;
+		private static Color[] modeColors = 
+		{
+			Color.white,
+			Color.yellow,
+			Color.red
+		};
 
 		public override void OnInspectorGUI()
 		{
@@ -119,7 +125,7 @@ namespace _05_CurvesAndSplines
 			Vector3 point = handleTransform.TransformPoint(spline.GetControlPoint(index));
 			float size = HandleUtility.GetHandleSize(point);
 
-			Handles.color = Color.white;
+			Handles.color = modeColors[(int) spline.GetControlPointMode(index)];
 			if (Handles.Button(point, handleRotation, size * _handleSize, size * _pickSize, Handles.DotCap))
 			{
 				selectedIndex = index;

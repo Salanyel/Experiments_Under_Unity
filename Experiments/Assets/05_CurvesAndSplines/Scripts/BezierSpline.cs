@@ -27,6 +27,7 @@ namespace _05_CurvesAndSplines
 		public void SetControlPoint(int index, Vector3 point)
 		{
 			points[index] = point;
+			EnforceMode(index);
 		}
 
 		public void Reset()
@@ -116,6 +117,39 @@ namespace _05_CurvesAndSplines
 		public void SetControlPointMode(int index, BezierControlPointMode mode)
 		{
 			modes[(index + 1) / 3] = mode;
+			EnforceMode(index);
+		}
+
+		//Force the mode of a point
+		void EnforceMode(int index)
+		{
+			int modeIndex = (index + 1) / 3;
+			BezierControlPointMode mode = modes[modeIndex];
+			if (mode == BezierControlPointMode.Free || modeIndex == 0 || modeIndex == modes.Length - 1)
+			{
+				return;
+			}
+
+			int middleIndex = modeIndex * 3;
+			int fixedIndex, enforcedIndex;
+			if (index <= middleIndex)
+			{
+				fixedIndex = middleIndex - 1;
+				enforcedIndex = middleIndex + 1;
+			}
+			else
+			{
+				fixedIndex = middleIndex + 1;
+				enforcedIndex = middleIndex - 1;
+			}
+
+			Vector3 middle = points[middleIndex];
+			Vector3 enforcedTangent = middle - points[fixedIndex];
+			if (mode == BezierControlPointMode.Aligned)
+			{
+				enforcedTangent = enforcedTangent.normalized * Vector3.Distance(middle, points[enforcedIndex]);
+			}
+			points[enforcedIndex] = middle + enforcedTangent;
 		}
 	}
 }
