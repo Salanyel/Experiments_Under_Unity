@@ -19,3 +19,5 @@ EditorBuildSettings:
     path: Assets/05_CurvesAndSplines/_Scene/05_CurvesAndSplines.unity
   - enabled: 1
     path: Assets/06_ProceduralGrid/_Scene/06_ProceduralGrid.unity
+  - enabled: 1
+    path: Assets/07_RoundedCube/_Scene/07_RoundedCube.unity
