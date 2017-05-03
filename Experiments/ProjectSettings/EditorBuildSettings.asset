@@ -23,3 +23,5 @@ EditorBuildSettings:
     path: Assets/07_RoundedCube/_Scene/07_RoundedCube.unity
   - enabled: 1
     path: Assets/08_CubeSphere/_Scene/08_CubeSphere.unity
+  - enabled: 1
+    path: Assets/09_MeshDeformation/_Scene/09_MeshDeformation.unity
