@@ -9,6 +9,7 @@ Current scene and content:
 05_CurvesAndSplines ==> Create a tool inside the editor to manipulate Bezier Splines
 06_ProceduralGrid ==> Create a simple mesh by first creating its vertices, then the trianges, then its uv
 07_RoundedCube ==> Create rounded cube by creating and manipulating vertices
+08 CubeSphere ==> Generate a sphere by creating each vertices of a cube then replacing them correctly
 
 NextStep:
 02_ConstructingFractal: 
