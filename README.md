@@ -7,6 +7,10 @@ Current scene and content:
 03_FramesPerSecond ==> Create a FPS counter by launching spheres against themselves
 04_ObjectsPool ==> Create a fountain of stuff. Each stuff are stored in a pool when no more needed. Instead of instantiate new gameobjects, the object from the pool are used again.
 05_CurvesAndSplines ==> Create a tool inside the editor to manipulate Bezier Splines
+06_ProceduralGrid ==> Create a simple mesh by first creating its vertices, then the trianges, then its uv
+07_RoundedCube ==> Create rounded cube by creating and manipulating vertices
+08_CubeSphere ==> Generate a sphere by creating each vertices of a cube then replacing them correctly
+09_MeshDeformation ==> Generate three sphere (vertices by vertices) and deform them by applying forces when clicking with the left mouse button
 
 NextStep:
 02_ConstructingFractal: 
