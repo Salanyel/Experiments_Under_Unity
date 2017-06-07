@@ -3,3 +3,6 @@
 /Experiments/.vs
 /Experiments/Library
 /Experiments/Temp
+/Experiments/.vscode/settings.json
+/Experiments/Assembly-CSharp-Editor.csproj
+/Experiments/Assembly-CSharp.csproj
