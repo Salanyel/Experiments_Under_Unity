@@ -29,3 +29,5 @@ EditorBuildSettings:
     path: Assets/10_Rendering/_Scene/10_Rendering.unity
   - enabled: 1
     path: Assets/11_Shader/_Scene/11_Shader.unity
+  - enabled: 1
+    path: Assets/12_CombiningTextures/_Scene/12_CombiningTextures.unity
