@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/09_MeshDeformation/_Scene/09_MeshDeformation.unity
   - enabled: 1
     path: Assets/10_Rendering/_Scene/10_Rendering.unity
+  - enabled: 1
+    path: Assets/11_Shader/_Scene/11_Shader.unity
