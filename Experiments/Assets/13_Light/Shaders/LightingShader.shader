@@ -34,12 +34,15 @@
 			Interpolators MyVertexProgram(VertexData p_vertexData) {
 				Interpolators i;
 				i.position = mul(UNITY_MATRIX_MVP, p_vertexData.position);
+				i.normal = UnityObjectToWorldNormal(p_vertexData.normal);
+				i.normal = normalize(i.normal);
+				p_vertexData.normal;
 				i.uv = TRANSFORM_TEX(p_vertexData.uv, _MainTex);
-				i.normal = p_vertexData.normal;
 				return i;
 			}
 
 			float4 MyFragmentProgram(Interpolators p_interpolator) : SV_TARGET {
+				p_interpolator.normal = normalize(p_interpolator.normal);
 				return float4(p_interpolator.normal * 0.5 + 0.5, 1);
 			}
 
