@@ -8,12 +8,16 @@
 	SubShader {
 
 		Pass {
+			Tags {
+				"LightMode" = "ForwardBase"
+			}
 			CGPROGRAM
 
 			#pragma vertex MyVertexProgram
 			#pragma fragment MyFragmentProgram
 
 			#include "UnityCG.cginc"
+			#include "UnityStandardBRDF.cginc"
 
 			float4 _Tint;
 			sampler2D _MainTex;
@@ -42,8 +46,13 @@
 			}
 
 			float4 MyFragmentProgram(Interpolators p_interpolator) : SV_TARGET {
+				float3 lightDir = _WorldSpaceLightPos0.xyz;
+				float3 lightColor = _LightColor0.rgb;
+				float3 diffuse = lightColor * DotClamped(lightDir, p_interpolator.normal);
+
 				p_interpolator.normal = normalize(p_interpolator.normal);
-				return float4(p_interpolator.normal * 0.5 + 0.5, 1);
+
+				return float4(diffuse, 1);
 			}
 
 			ENDCG
