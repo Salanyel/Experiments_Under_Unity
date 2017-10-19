@@ -7,21 +7,43 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_MainScene.unity
+    guid: af3125d1a7c308d4cb4964c40c1ced02
   - enabled: 1
     path: Assets/01_Clock/_Scene/01_Clock.unity
+    guid: 066a82fd0a8db964f84bfe4c03c75922
   - enabled: 1
     path: Assets/02_ConstructingFractal/_Scene/02_ConstructingFractal.unity
+    guid: d2cc154f5bfe95b458c7e7e2010b22ea
   - enabled: 1
     path: Assets/03_FramesPerSecond/_Scenes/03_FramesPerSecond.unity
+    guid: 7043e34a778d31a4fa2bfda7df27ac90
   - enabled: 1
     path: Assets/04_ObjectPools/_Scene/04_ObjectPools.unity
+    guid: 68298e741b2121a46b20726ba6c9a629
   - enabled: 1
     path: Assets/05_CurvesAndSplines/_Scene/05_CurvesAndSplines.unity
+    guid: f03ddd77f1fbd4438bdf6dd6c0f820fa
   - enabled: 1
     path: Assets/06_ProceduralGrid/_Scene/06_ProceduralGrid.unity
+    guid: 91d940ee0a4654babada3cf036c604fc
   - enabled: 1
     path: Assets/07_RoundedCube/_Scene/07_RoundedCube.unity
+    guid: beef3dc9d417f4b97a5ce88f5c76f5b4
   - enabled: 1
     path: Assets/08_CubeSphere/_Scene/08_CubeSphere.unity
+    guid: 55cf9299bcd2e455caf22a5c6c949f2f
   - enabled: 1
     path: Assets/09_MeshDeformation/_Scene/09_MeshDeformation.unity
+    guid: 0c41785bd11554433b7aa06172fd24c3
+  - enabled: 1
+    path: Assets/10_Rendering/_Scene/10_Rendering.unity
+    guid: 21eba31b956f142d5bf6cbfa8a4255e4
+  - enabled: 1
+    path: Assets/11_Shader/_Scene/11_Shader.unity
+    guid: 65d2474b1cdbc45c79d9be0fc1e29301
+  - enabled: 1
+    path: Assets/12_CombiningTextures/_Scene/12_CombiningTextures.unity
+    guid: 0bb0d9c6e83624e079c7ea09acea8021
+  - enabled: 1
+    path: Assets/13_Light/_Scene/13_Light.unity
+    guid: 00000000000000000000000000000000
